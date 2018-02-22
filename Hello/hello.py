@@ -63,7 +63,7 @@ class Hello:
 
         # Declare instance attributes
         self.actions = []
-        self.menu = self.tr(u'&Hello World')
+        self.menu = self.tr(u'&OLA MUNDO ETA')
         # TODO: We are going to let the user set this up in a future iteration
         self.toolbar = self.iface.addToolBar(u'Hello')
         self.toolbar.setObjectName(u'Hello')
@@ -200,7 +200,7 @@ class Hello:
 
         for action in self.actions:
             self.iface.removePluginMenu(
-                self.tr(u'&Hello World'),
+                self.tr(u'&TCHAU MUNDO'),
                 action)
             self.iface.removeToolBarIcon(action)
         # remove the toolbar
@@ -214,7 +214,7 @@ class Hello:
         if not self.pluginIsActive:
             self.pluginIsActive = True
 
-            #print "** STARTING Hello"
+            print "** STARTING Hello"
 
             # dockwidget may not exist if:
             #    first run of plugin
